@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard | Sabancıart Ses Yarışması</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        :root {
+            --background-body: #04162F;
+            --text-bright: #49FFEF;
+            /*--background: #D700EB;
+            --form-text: #FBF44C;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Yarışma Kontrol Paneli</h1>
+    <h3>Sabancıart ❤️ Loth Robotics</h3>
+    <hr>
+    <h4>Ekranlar</h4>
+    <button onclick="showLogo()">Yarışma Logosu</button>
+    <button onclick="showName()">Şarkıcı adı</button>
+    <button onclick="showVoting()">Oylama Ekranı</button>
+    <button onclick="showDilara()">Dilara Video</button>
+    <input id="singernameinput" type="text" placeholder="Yarışmacı Adı">
+    <button onclick="updateSingerName()">Yarışmacı Adını Güncelle</button>
+    <hr>
+    <h4>Başlıklar</h4>
+    <hr>
+    <p>Orta Üst Başlık</p>
+    <input id="topmiddleinput" placeholder="Orta Üst Başlık" type="text">
+    <p>Sol Üst Başlık</p>
+    <input id="topleftinput" placeholder="Sol Üst Başlık" type="text">
+    <p>Sol Alt Başlık</p>
+    <input id="bottomleftinput" placeholder="Sol Alt Başlık" type="text">
+    <button onclick="updateHeaders()">Başlıkları Güncelle</button>
+    <hr>
+    <h4>Yarışmacılar</h4>
+    <hr>
+        <div>
+            <p>Gül Bahar Akyıldız</p>
+            <p>Şu anki puan: <span id="baharpoints">0</span></p>
+            <input placeholder="Eklenecek Puan" id="baharpointinput" type="text">
+            <button onclick="updatePoints('bahar')">Onayla</button>
+        </div>
+        <hr>
+        <div>
+            <p>Nehir Tutal</p>
+            <p>Şu anki puan: <span id="nehirpoints">0</span></p>
+            <input placeholder="Eklenecek Puan" id="nehirpointinput" type="text">
+            <button onclick="updatePoints('nehir')">Onayla</button>
+        </div>
+        <hr>
+        <div>
+            <p>Azra Çökük</p>
+            <p>Şu anki puan: <span id="azrapoints">0</span></p>
+            <input placeholder="Eklenecek Puan" id="azrapointinput" type="text">
+            <button onclick="updatePoints('azra')">Onayla</button>
+        </div>
+        <hr>
+        <div>
+            <p>Su Beril Sider</p>
+            <p>Şu anki puan: <span id="supoints">0</span></p>
+            <input placeholder="Eklenecek Puan" id="supointinput" type="text">
+            <button onclick="updatePoints('su')">Onayla</button>
+        </div>
+</body>
+</html>
